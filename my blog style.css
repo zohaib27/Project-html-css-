@@ -1,0 +1,84 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+
+    margin:0;
+    padding: 0;
+    background-color: beige;
+}
+.container{
+    width: 90%;
+
+}
+/* Neumorphism Helper Classes */
+.neumorphism {
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.neumorphism-inset {
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #e7b6b6;
+  color: #460404ee;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Article Styles */
+article {
+  padding: 20px;
+  background-color: #fac5c5;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+  margin-top: 24px;
+}
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #3a0404;
+}
+
+.post-date {
+  font-size: 14px;
+  color: #6017e7;
+  margin-bottom: 20px;
+}
+
+/* Neumorphic Button */
+button {
+  display: inline-block;
+  background-color: #e0e0e0;
+  margin-top: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  outline: none;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
