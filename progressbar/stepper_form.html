@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Step form with progressbar</title>
+<link rel="stylesheet"  href="stepper_form.css">
+</head>
+<body>
+   <form action="#" class="form">
+<h1 class="SignUp Form">SignUp Form</h1>
+
+<!-- Progressbar -->
+<div class="progressbar">
+  <div class="progress-step active" data-title="Step 1"></div>
+  <div class="progress-step active" data-title="Step 2"></div>
+  <div class="progress-step active" data-title="Step 3"></div>
+</div>
+<!-- steps -->
+<div class="form-step active">
+  <div class="input-group">
+    <label for="Name">Name</label>
+    <input type="text" name="Name" id="Name">
+    <button id="Next">Next</button>
+  </div>
+
+  <div class="progressbar">
+    <div class="progress-step active" data-title="Step 1"></div>
+    <div class="progress-step active" data-title="Step 2"></div>
+    <div class="progress-step active" data-title="Step 3"></div>
+  </div>
+  <div class="input-group">
+    <label for="E-mail">E-mail</label>
+    <input type="text" name="E-mail" id="E-mail">
+    <button id="Previous">Previous</button>
+    <button id="Next">Next</button>
+  </div>
+
+
+  <div class="progressbar">
+    <div class="progress-step active" data-title="Step 1"></div>
+    <div class="progress-step active" data-title="Step 2"></div>
+    <div class="progress-step active" data-title="Step 3"></div>
+  </div>
+  <div class="input-group">
+    <label for="Number">Number</label>
+    <input type="text" name="Number" id="Number">
+    <button id="Done">Done</button>
+  </div>
+</div>
+   </form>
+</body>
+</html>
