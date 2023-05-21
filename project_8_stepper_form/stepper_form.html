@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Step form with progressbar</title>
+<link rel="stylesheet"  href="stepper_form.css">
+</head>
+<body>
+   <form action="#" class="form">
+<h1 class="h1">SignUp Form</h1>
+
+<!-- Progressbar -->
+<!-- <div class="progressbar">
+  <div class="progress-step active" data-title="Step 1"></div>
+  <div class="progress-step active" data-title="Step 2"></div>
+  <div class="progress-step active" data-title="Step 3"></div>
+</div> -->
+<div class="steps-container">
+  <div class="step">
+    <div class="step-circle active">
+      <span>1</span>
+    </div>
+    <div class="step-label">
+      <span>Step 1</span>
+    </div>
+  </div>
+  
+  <div class="step">
+    <div class="step-circle active">
+      <span>2</span>
+    </div>
+    <div class="step-label">
+      <span>Step 2</span>
+    </div>
+  </div>
+  <div class="step">
+    <div class="step-circle">
+      <span>3</span>
+    </div>
+    <div class="step-label">
+      <span>Step 3</span>
+    </div>
+  </div>
+</div>
+<!-- steps -->
+<div class="form-step">
+  <div class="input-group">
+    <label for="Name">Name</label>
+    <input type="text" name="Name" id="Name">
+    <button id="Next">Next</button>
+  </div>
+
+
+  <div class="input-group show">
+    <label for="E-mail">E-mail</label>
+    <input type="text" name="E-mail" id="E-mail">
+    <button id="Previous">Previous</button>
+    <button id="Next">Next</button>
+  </div>
+
+  <div class="input-group">
+    <label for="Number">Number</label>
+    <input type="text" name="Number" id="Number">
+    <button id="Done">Done</button>
+  </div>
+</div>
+   </form>
+</body>
+</html>

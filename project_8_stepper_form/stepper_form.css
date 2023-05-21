@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, #74ebd6, #acb6e5);
+}
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.input {
+  display: flex;
+
+  padding: 1px;
+  border: 1px solid;
+  border-radius: o.3px;
+}
+
+.form {
+  width: 90%;
+  margin: 30px auto;
+  border: 2px solid;
+  border-radius: 1rem;
+  padding: 24px;
+  background-color: bisque;
+  box-shadow: 3px;
+}
+
+.h1 {
+  text-align: center;
+}
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 4rem 0;
+}
+
+.progressbar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 6px;
+  width: 100%;
+  background-color: rgb(83, 56, 56);
+}
+
+.progress-step {
+  width: 45px;
+  height: 45px;
+  background-color: brown;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.progress-step ::before {
+  counter-increment: step;
+  content: counter(step);
+}
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100%+0.5rem);
+  font-size: 0.9rem;
+  color: black;
+}
+.progress-step.active {
+  background-color: aqua;
+}
+
+.input-group {
+  display: none;
+  margin-top: 24px;
+  gap: 8px;
+align-items: center;
+}
+
+.input-group > input {
+  flex: 1;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 24px;
+}
+
+.step {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.step > .step-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.step > .step-label {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.show {
+  display: flex;
+}
